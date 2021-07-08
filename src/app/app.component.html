@@ -1,0 +1,21 @@
+<div id="property" class="property-panel-table" title="Properties">
+	<table id="property" title="Properties">
+	  <tbody>
+		<tr style="height: 50px">
+		  <td> <button ejs-button (click)="clickPrev()">Previous</button> </td>
+		  <td> <button ejs-button (click)="clickNext()">Next</button> </td>
+		  <td> <div> Current Date </div> </td>
+		  <td> <div> <ejs-datepicker #datepicker [(value)]='selectedDate' [showClearButton]=false> </ejs-datepicker> </div> </td>
+		  <td> <div>Current View </div> </td>
+		  <td> <div> <ejs-dropdownlist id="scheduleview" [dataSource]='datas' [(value)]='scheduleView'> </ejs-dropdownlist> </div> </td>
+		</tr>
+	  </tbody>
+	</table>
+  </div>
+  <div class="control-section">
+	<div class="col-lg-9 content-wrapper">
+	  <ejs-schedule #scheduleObj height='550px' [showHeaderBar]="showHeaderBar" [(selectedDate)]="selectedDate"
+			  [eventSettings]="eventSettings" [(currentView)]="scheduleView">
+		  </ejs-schedule>
+	</div>
+  </div>
