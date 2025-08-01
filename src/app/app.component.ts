@@ -1,7 +1,7 @@
 import { Component, ViewChild } from "@angular/core";
 import { extend } from "@syncfusion/ej2-base";
-import { EventSettingsModel, DayService, ViewHelper, ScheduleComponent, View, WeekService, WorkWeekService, MonthService, AgendaService, ResizeService, DragAndDropService } from "@syncfusion/ej2-angular-schedule";
-import { scheduleData } from "../../dataSource"
+import { EventSettingsModel, DayService, ScheduleComponent, View, WeekService, WorkWeekService, MonthService, AgendaService, ResizeService, DragAndDropService } from "@syncfusion/ej2-angular-schedule";
+import { scheduleData } from "./data"
 
 @Component({
   selector: "app-root",
